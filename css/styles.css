@@ -196,3 +196,7 @@ body {
 .footer-contakt-link:focus {
   color: var(--blue-color);
 }
+
+.bottom-background {
+  background: var(--dark-gray-color);
+}
