@@ -2,8 +2,8 @@
   --background-color: #e5e5e5;
   --blue-color: #2196f3;
   --black-color: #000000;
+  --light-gray-color: #757575;
   --dark-gray-color: #212121;
-  --light-grey-color: #757575;
   --white-color: #ffffff;
   --button-color: #f5f4fa;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .nav-list-light {
-  color: var(--light-grey-color);
+  color: var(--light-gray-color);
 }
 
 .main-heading {
@@ -98,7 +98,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--light-grey-color);
+  color: var(--light-gray-color);
 }
 
 .list-title {
@@ -121,7 +121,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  color: var(--light-grey-color);
+  color: var(--light-gray-color);
 }
 
 .address-text {
@@ -175,7 +175,7 @@ body {
   line-height: 1.88;
 
   letter-spacing: 0.03em;
-  color: var(--light-grey-color);
+  color: var(--light-gray-color);
 }
 
 .footer-address {
