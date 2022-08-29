@@ -271,6 +271,7 @@ ul {
 .box-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .box-slider {
@@ -333,4 +334,8 @@ ul {
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+
+.ul-display {
+  display: flex;
 }
