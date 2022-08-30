@@ -49,7 +49,6 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   gap: 46px;
-  padding-left: 93px;
 }
 
 .nav-list:hover,
@@ -338,4 +337,5 @@ ul {
 
 .ul-display {
   display: flex;
+  gap: 40px;
 }
