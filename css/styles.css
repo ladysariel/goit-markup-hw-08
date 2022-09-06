@@ -159,21 +159,27 @@ body {
 }
 
 .button {
-  width: 121px;
-  height: 38px;
-  background: var(--blue-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 6px 22px;
-}
-
-.button-text {
+  background: var(--button-color);
+  color: var(--dark-gray-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
+  line-height: 30px;
+  border-style: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: 0.25s;
+}
+.button:hover,
+.button:focus {
+  background: var(--blue-color);
+  color: var(--white-color);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 0.25s;
+}
+.button:focus {
+  background: var(--blue-color);
   color: var(--white-color);
   cursor: pointer;
 }
@@ -288,6 +294,7 @@ ul {
   justify-content: flex-start;
   gap: 30px;
   padding-bottom: 94px;
+  border-radius: 4px;
 }
 .box-what-we-do {
   display: flex;
@@ -304,6 +311,11 @@ ul {
   gap: 30px;
   text-align: center;
   padding: 0;
+}
+
+.box-our-team li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .box-footer {
   display: flex;
@@ -324,6 +336,11 @@ ul {
 .card-product > img {
   display: block;
 }
+.card-product:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 0.35s;
+}
 
 .button-container {
   display: flex;
@@ -343,7 +360,7 @@ ul {
       var(--colorBackgroundImage)
     ),
     url("../images/sliderbg.jpeg");
-    background-size: cover;
+  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -389,6 +406,16 @@ ul {
   background-color: var(--white-color);
   fill: var(--icon-color);
 }
+
+.icon-social:hover svg,
+.icon-social:focus svg {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  fill: var(--white-color);
+}
+
 .box-our-clients {
   display: flex;
   justify-content: center;
