@@ -222,6 +222,11 @@ body {
 
 .bottom-background {
   background: var(--dark-gray-color);
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 55.5px 0;
+
 }
 
 ul {
@@ -240,11 +245,11 @@ ul {
 
 .section-top {
   background-color: var(--section-background2);
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0 210px;
   width: 100%;
 }
 
