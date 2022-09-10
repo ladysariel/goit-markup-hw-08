@@ -226,7 +226,6 @@ body {
   justify-content: flex-start;
   gap: 20px;
   padding: 55.5px 0;
-
 }
 
 ul {
@@ -327,7 +326,7 @@ ul {
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
-  padding: 55.5px 0;
+  padding: 55.5px;
 }
 
 .background-color-white {
