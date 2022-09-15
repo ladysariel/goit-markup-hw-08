@@ -12,6 +12,7 @@
   --icon-footer-bg: #ffffff1a;
   --figcaption-background: #2f303acc;
   --color-transparent: hsla(0, 0%, 0%, 0.2);
+  --blue-color-overlay: #2196f3e6;
 }
 
 body {
@@ -576,4 +577,30 @@ figcaption {
   background-color: var(--blue-color);
   cursor: unset;
   pointer-events: none;
+}
+.card-overlay-anchor {
+  position: relative;
+  overflow: hidden;
+}
+.card-product-overlay {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  line-height: 1.555555556;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background: var(--blue-color-overlay);
+  padding: 49px 45px 49px 24px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-product:hover .card-product-overlay {
+  transform: translateY(0%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
