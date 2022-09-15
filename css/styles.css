@@ -10,6 +10,8 @@
   --colorBackgroundImage: #2f303a66;
   --icon-color: #afb1b8;
   --icon-footer-bg: #ffffff1a;
+  --figcaption-background: #2f303acc;
+  --color-transparent: hsla(0, 0%, 0%, 0.2);
 }
 
 body {
@@ -483,4 +485,95 @@ ul {
   text-align: start;
   color: var(--button-color);
   margin-bottom: 20px;
+}
+.what-we-do-anchor {
+  position: relative;
+}
+
+.what-we-do-caption {
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142857143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px 0px;
+  background: var(--figcaption-background);
+  color: var(--white-color);
+  bottom: 0px;
+  width: 100%;
+}
+
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+.backdrop {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-window {
+  display: flex;
+  justify-content: flex-end;
+  width: 528px;
+  height: 581px;
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px;
+}
+.modal-window-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-color);
+  border: 1px solid var(--color-transparent);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.you-here-link {
+  position: relative;
+  color: var(--blue-color);
+}
+.you-here-link::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 40px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+  cursor: unset;
+  pointer-events: none;
 }

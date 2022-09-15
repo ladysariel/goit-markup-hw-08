@@ -31,7 +31,7 @@
         <nav>
           <ul class="ul-display">
             <li>
-              <a href="index.html" class="nav-list">Agencja</a>
+              <a href="index.html" class="nav-list you-here-link">Agencja</a>
             </li>
             <li>
               <a href="portfolio.html" class="nav-list">Portfolio</a>
@@ -71,7 +71,7 @@
             <h1 class="main-heading">
               EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
             </h1>
-            <button type="button" class="main-button">
+            <button type="button" class="main-button" data-modal-open>
               <span class="main-button-text">Zamów usługę</span>
             </button>
           </div>
@@ -128,28 +128,49 @@
           <h2 class="list-title">Czym się zajmujemy</h2>
           <ul class="box-what-we-do">
             <li>
-              <img
-                src="./images/img-1.jpg"
-                alt="Tworzenie stron"
-                width="370"
-                height="294"
-              />
+              <div class="what-we-do-anchor">
+                <figure>
+                  <img
+                    src="./images/img-1.jpg"
+                    alt="Tworzenie stron"
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption class="what-we-do-caption">
+                    Aplikacje komputerowe
+                  </figcaption>
+                </figure>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/img-2.jpg"
-                alt="Aplikacje"
-                width="370"
-                height="294"
-              />
+              <div class="what-we-do-anchor">
+                <figure>
+                  <img
+                    src="./images/img-2.jpg"
+                    alt="Aplikacje"
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption class="what-we-do-caption">
+                    Aplikacje mobilne
+                  </figcaption>
+                </figure>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/img-3.jpg"
-                alt="Grafika"
-                width="370"
-                height="294"
-              />
+              <div class="what-we-do-anchor">
+                <figure>
+                  <img
+                    src="./images/img-3.jpg"
+                    alt="Grafika"
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption class="what-we-do-caption">
+                    Rozwiązania graficzne
+                  </figcaption>
+                </figure>
+              </div>
             </li>
           </ul>
         </div>
@@ -504,5 +525,17 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button
+          class="modal-window-close-button"
+          type="button"
+          data-modal-close
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
