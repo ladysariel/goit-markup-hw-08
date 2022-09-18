@@ -332,9 +332,6 @@ ul {
   padding: 55.5px;
 }
 
-.background-color-white {
-  background: var(--white-color);
-}
 .card-product {
   padding: 5px;
   flex-basis: 370px;
