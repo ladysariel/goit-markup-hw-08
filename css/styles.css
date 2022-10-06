@@ -469,6 +469,7 @@ ul {
 .box-footer-icons {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: start;
   margin-top: 12px;
 }
