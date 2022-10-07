@@ -34,8 +34,6 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0;
-}
-.logo-top {
   padding: 24px 0;
 }
 
@@ -47,7 +45,8 @@ body {
   color: var(--black-color);
 }
 
-.nav-list {
+.navigation {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -58,12 +57,12 @@ body {
   gap: 16px;
 }
 
-.nav-list:hover,
-.nav-list:focus {
+.navigation:hover,
+.navigation:focus {
   color: var(--blue-color);
 }
 
-.nav-list-light {
+.navigation-light {
   color: var(--light-gray-color);
 }
 
@@ -200,7 +199,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-
   letter-spacing: 0.03em;
   color: var(--light-gray-color);
 }
@@ -235,13 +233,14 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  gap: 40px;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
 }
-
 .section {
   padding: 94px 0;
 }
@@ -275,7 +274,7 @@ ul {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.border-header {
+.section__page-header {
   border-bottom: 1px solid var(--white-color);
 }
 .background-color-white {
@@ -288,13 +287,11 @@ ul {
 }
 
 .box-slider {
-  background: var(---section-background2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  background: var(----section-background2);
   padding: 200px 0;
 }
 
@@ -320,6 +317,7 @@ ul {
   gap: 30px;
   text-align: center;
   padding: 0;
+  background-color: var(--white-color);
 }
 
 .box-our-team li {
@@ -344,11 +342,6 @@ ul {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-/*
-.card-product > img {
-  display: block;
-} */
-
 .card-product > p {
   padding-left: 20px;
 }
@@ -369,18 +362,13 @@ ul {
   margin-bottom: 50px;
 }
 
-.ul-display {
-  display: flex;
-  gap: 40px;
-}
-
 .background-slider {
   background-image: linear-gradient(
       var(--colorBackgroundImage),
       var(--colorBackgroundImage)
     ),
     url("../images/sliderbg.jpeg");
-  background-size: cover;
+    background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
 }
