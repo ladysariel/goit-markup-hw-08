@@ -8,7 +8,7 @@
   --white-color: #ffffff;
   --button-color: #f5f4fa;
   --section-background2: #2f303a;
-  --colorBackgroundImage: #2f303a66;
+  --image-background: #2f303a66;
   --icon-color: #afb1b8;
   --icon-footer-bg: #ffffff1a;
   --figcaption-background: #2f303acc;
@@ -363,8 +363,8 @@ ul {
 
 .banner__background {
   background-image: linear-gradient(
-      var(--colorBackgroundImage),
-      var(--colorBackgroundImage)
+      var(--image-background),
+      var(--image-background)
     ),
     url("../images/sliderbg.jpeg");
   background-size: cover;
