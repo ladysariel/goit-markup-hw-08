@@ -1,0 +1,32 @@
+.clients {
+  padding: 94px 0;
+}
+.clients__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+.clients__list--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--white-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition: 0.4s;
+}
+.clients__list--icon {
+  fill: var(--icon-color);
+  transition: 0.4s;
+}
+.clients__list--link:hover svg,
+.clients__list--link:focus svg,
+.clients__list--link:hover,
+.clients__list--link:focus {
+  fill: var(--blue-color);
+  border-color: var(--blue-color);
+  transition: 0.4s;
+}

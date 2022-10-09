@@ -1,0 +1,53 @@
+.team__members--name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--dark-gray-color);
+}
+
+.team__members--job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--light-gray-color);
+}
+.team {
+  padding: 94px 0;
+  background: var(--button-color);
+}
+.team__members {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+  padding: 0;
+}
+
+.team__members li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white-color);
+}
+.team__members--socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.team__members--icons {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  fill: var(--icon-color);
+}
+
+.team__members--icons:hover,
+.team__members--icons:focus {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  fill: var(--white-color);
+}

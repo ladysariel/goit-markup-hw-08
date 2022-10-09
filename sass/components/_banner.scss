@@ -1,0 +1,62 @@
+.banner__heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0 0 40px;
+}
+
+.banner__button {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.banner__button-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.banner {
+  background-color: var(--section-background2);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.banner__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 200px 0;
+}
+.banner__background {
+  background-image: linear-gradient(
+      var(--image-background),
+      var(--image-background)
+    ),
+    url("../images/sliderbg.jpeg");
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+}
