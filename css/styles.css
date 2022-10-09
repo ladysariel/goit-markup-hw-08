@@ -157,7 +157,7 @@ body {
   color: var(--blue-color);
 }
 
-.button {
+.menu__portfolio--button {
   background: var(--button-color);
   color: var(--dark-gray-color);
   font-weight: 500;
@@ -168,8 +168,8 @@ body {
   padding: 6px 22px;
   transition: 0.25s;
 }
-.button:hover,
-.button:focus {
+.menu__portfolio--button:hover,
+.menu__portfolio--button:focus {
   background: var(--blue-color);
   color: var(--white-color);
   cursor: pointer;
@@ -177,13 +177,8 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   transition: 0.25s;
 }
-.button:focus {
-  background: var(--blue-color);
-  color: var(--white-color);
-  cursor: pointer;
-}
 
-.caption-main {
+.products__offer--caption {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -191,7 +186,7 @@ body {
   color: var(--dark-gray-color);
 }
 
-.caption-description {
+.products__offer--description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -236,7 +231,7 @@ ul {
 .container {
   width: 1200px;
   margin: 0 auto;
-}
+} 
 .menu {
   padding: 94px 0;
 }
@@ -260,7 +255,7 @@ ul {
   gap: 93px;
 }
 
-.box-gallery {
+.products {
   background-color: var(--white-color);
   margin: 0;
   display: flex;
@@ -332,7 +327,7 @@ ul {
   width: fit-content;
 }
 
-.card-product {
+.products__offer {
   margin: 0;
   /* padding: 5px; */
   flex-basis: 370px;
@@ -341,20 +336,20 @@ ul {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.card-product > p {
+.products__offer > p {
   padding-left: 20px;
 }
 
-.card-product > h4 {
+.products__offer > h4 {
   padding-left: 20px;
 }
-.card-product:hover {
+.products__offer:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: 0.35s;
 }
 
-.button-container {
+.menu__portfolio {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -372,16 +367,13 @@ ul {
   margin: 0 auto;
 }
 
-.envelope-icon,
-.phone-icon {
+.navigation__menu--icon {
   fill: var(--light-gray-color);
   transition: 0.2s;
 }
 
-.envelope-icon:hover,
-.envelope-icon:focus,
-.phone-icon:hover,
-.phone-icon:focus {
+.navigation__menu--icon:hover,
+.navigation__menu--icon:focus {
   fill: var(--blue-color);
   transition: 0.2s;
 }
@@ -396,7 +388,7 @@ ul {
   gap: 10px;
   margin-bottom: 30px;
 }
-.team__member--icons {
+.team__members--icons {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -404,8 +396,8 @@ ul {
   fill: var(--icon-color);
 }
 
-.team__member--icons:hover,
-.team__member--icons:focus {
+.team__members--icons:hover,
+.team__members--icons:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -539,7 +531,7 @@ figcaption {
   border-radius: 4px;
   padding: 8px;
 }
-.modal-window-close-button {
+.modal-window__button {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -572,11 +564,11 @@ figcaption {
   cursor: unset;
   pointer-events: none;
 }
-.card-overlay-anchor {
+.products__offer--overlay {
   position: relative;
   overflow: hidden;
 }
-.card-product-overlay {
+.products__offer-overlay {
   margin: 0;
   position: absolute;
   top: 0;
@@ -593,13 +585,13 @@ figcaption {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-product:hover .card-product-overlay {
+.products__offer:hover .products__offer-overlay {
   transform: translateY(0%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-header {
+.modal-window__header {
   text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
@@ -609,19 +601,19 @@ figcaption {
   color: var(--dark-gray-color);
 }
 
-.box-modal-form {
+.modal-window__form {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding: 40px;
 }
-.box-form {
+.modal-window__box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-.label-modal-form {
+.modal-window__form--label {
   font-size: 12px;
   line-height: 1.166666667;
   letter-spacing: 0.01em;
@@ -630,7 +622,7 @@ figcaption {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-modal-form {
+.modal-window__form--input {
   width: 448px;
   height: 40px;
   border: 1px solid var(--color-transparent);
@@ -644,11 +636,11 @@ figcaption {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.field-form {
+.modal-window__form--field {
   position: relative;
   display: block;
 }
-.comment-modal-form {
+.modal-window__form--comment {
   width: 448px;
   height: 120px;
   border: 1px solid var(--color-transparent);
@@ -661,10 +653,10 @@ figcaption {
   margin-bottom: 10px;
   resize: none;
 }
-.comment-modal-form::placeholder {
+.modal-window__form--comment::placeholder {
   color: var(--light-gray-transparent);
 }
-.icon-input-form {
+.modal-window__form--icon {
   position: absolute;
   top: 35px;
   left: 15px;
@@ -673,8 +665,8 @@ figcaption {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-modal-form:focus,
-.comment-modal-form:focus {
+.modal-window__form--input:focus,
+.modal-window__form--comment:focus {
   border-color: var(--blue-color);
   outline: none;
   transition-property: fill;
@@ -682,7 +674,7 @@ figcaption {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-complete-order {
+.modal-window__form--button {
   background: var(--blue-color);
   box-shadow: 0px 4px 4px #00000026;
   border-radius: 4px;
@@ -701,8 +693,8 @@ figcaption {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-complete-order:hover,
-.btn-complete-order:focus {
+.modal-window__form--button:hover,
+.modal-window__form--button:focus {
   background: var(--section-background2);
   color: var(--blue-color);
   cursor: pointer;
@@ -710,7 +702,7 @@ figcaption {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-modal-checkbox {
+.modal-window__form--checkbox {
   display: flex;
   align-items: center;
   align-content: center;
@@ -721,22 +713,22 @@ figcaption {
   color: var(--light-gray-color);
   white-space: pre;
 }
-.links-order-form {
+.modal-window__form--links {
   color: var(--blue-color);
   text-decoration-thickness: 1px;
 }
 
-.links-order-form:hover {
+.modal-window__form--links:hover {
   color: var(--blue-color);
   text-decoration-thickness: 2px;
   text-decoration-skip-ink: none;
 }
-.input-modal-checkbox {
+.modal-window__form--check {
   margin-left: 14px;
   appearance: none;
   position: absolute;
 }
-.checkbox {
+.modal-window__form--checkmark {
   border: 2px var(--dark-gray-color) solid;
   border-radius: 2px;
   background: var(--white-color);
@@ -744,7 +736,7 @@ figcaption {
   margin: 2px 7px 2px 0;
   cursor: pointer;
 }
-.input-modal-checkbox:checked + .checkbox {
+.modal-window__form--check:checked + .modal-window__form--checkmark {
   fill: var(--white-color);
   background: var(--blue-color);
   border-color: var(--blue-color);
@@ -761,7 +753,7 @@ figcaption {
   display: inline-flex;
   gap: 12px;
 }
-.newsletter-label {
+.footer--newsletter__label {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -769,7 +761,7 @@ figcaption {
   text-transform: uppercase;
   color: var(--white-color);
 }
-.input-newsletter {
+.footer--newsletter__input {
   font-size: 16px;
   line-height: 20px;
   display: flex;
@@ -785,14 +777,14 @@ figcaption {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-newsletter:focus {
+.footer--newsletter__input:focus {
   border-color: var(--blue-color);
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.btn-sign-up {
+.footer--newsletter__button {
   background: var(--blue-color);
   box-shadow: 0px 4px 4px #00000026;
   border-radius: 4px;
@@ -813,23 +805,23 @@ figcaption {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.icon-sign-up {
+.footer--newsletter__icons {
   fill: var(--white-color);
   background: var(--blue-color);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-sign-up:hover,
-.btn-sign-up:focus {
+.footer--newsletter__button:hover,
+.footer--newsletter__button:focus {
   background: var(--button-color);
   color: var(--dark-gray-color);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-sign-up:hover svg,
-.btn-sign-up:focus svg {
+.footer--newsletter__button:hover svg,
+.footer--newsletter__button:focus svg {
   background: var(--button-color);
   fill: var(--blue-color);
   transition-property: box-shadow;
